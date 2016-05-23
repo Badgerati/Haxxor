@@ -1,0 +1,9 @@
+language: csharp
+
+solution: Haxxor.sln
+
+mono:
+  - latest
+
+script:
+  - xbuild /p:Configuration=Release /p:TargetFrameworkVersion="v4.5" /p:DebugSymbols=False Haxxor.sln

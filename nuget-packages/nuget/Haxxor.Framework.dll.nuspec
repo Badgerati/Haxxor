@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Haxxor.Framework</id>
+    <version>$version$</version>
+    <authors>Badgerati</authors>
+    <owners>Badgerati</owners>
+    <licenseUrl>https://github.com/Badgerati/Haxxor/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/Badgerati/Haxxor/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/Badgerati/Haxxor/master/Images/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Haxxor is a simple encrpytion/decrpytion framework, which support multiple methods of encryption.</description>
+    <releaseNotes>https://github.com/Badgerati/Haxxor/releases</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>haxxor encrypt decrypt aes sha md5</tags>
+  </metadata>
+</package>
