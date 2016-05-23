@@ -45,6 +45,8 @@
     <Compile Include="Core\Exceptions\HaxxorException.cs" />
     <Compile Include="Core\Helpers\CryptoHelper.cs" />
     <Compile Include="Core\Interfaces\IEncryptionModule.cs" />
+    <Compile Include="Core\RIPEMD160EncryptionModule.cs" />
+    <Compile Include="Core\MD5EncryptionModule.cs" />
     <Compile Include="Core\SHA1EncryptionModule.cs" />
     <Compile Include="Core\SHA256EncryptionModule.cs" />
     <Compile Include="Core\SHA384EncryptionModule.cs" />

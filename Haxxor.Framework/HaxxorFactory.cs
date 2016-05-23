@@ -38,6 +38,8 @@ namespace Haxxor.Framework
             { EncryptionType.SHA512, new SHA512EncryptionModule() },
             { EncryptionType.AES128, new AES128EncryptionModule() },
             { EncryptionType.AES256, new AES256EncryptionModule() },
+            { EncryptionType.MD5, new MD5EncryptionModule() },
+            { EncryptionType.RIPEMD160, new RIPEMD160EncryptionModule() },
         };
 
         #endregion

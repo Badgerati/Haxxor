@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Haxxor.Framework
 {
 
@@ -18,7 +13,9 @@ namespace Haxxor.Framework
         SHA384 = 3,
         SHA512 = 4,
         AES128 = 5,
-        AES256 = 6
+        AES256 = 6,
+        MD5 = 7,
+        RIPEMD160 = 8
     }
 
 }

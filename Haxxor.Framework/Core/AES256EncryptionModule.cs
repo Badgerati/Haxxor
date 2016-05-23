@@ -1,12 +1,8 @@
 ﻿using Haxxor.Framework.Core.Exceptions;
 using Haxxor.Framework.Core.Helpers;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Haxxor.Framework.Core
 {
@@ -111,7 +107,7 @@ namespace Haxxor.Framework.Core
 
             var tagless = CryptoHelper.GetFullHash(hash);
             var text = string.Empty;
-            
+
             var bytes = CryptoHelper.GetHash(tagless);
             var key = CryptoHelper.GetKey(tagless);
             var iv = CryptoHelper.GetIV(tagless);

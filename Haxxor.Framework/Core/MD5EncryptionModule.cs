@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 
 namespace Haxxor.Framework.Core
 {
-    public class SHA512EncryptionModule : EncryptionModule
+    public class MD5EncryptionModule : EncryptionModule
     {
 
         /// <summary>
@@ -18,7 +18,7 @@ namespace Haxxor.Framework.Core
         {
             get
             {
-                return EncryptionType.SHA512;
+                return EncryptionType.MD5;
             }
         }
 
@@ -41,9 +41,9 @@ namespace Haxxor.Framework.Core
 
             var bytes = CryptoHelper.GetBytes(value);
 
-            using (var sha = new SHA512Managed())
+            using (var md5 = MD5.Create())
             {
-                var hash = sha.ComputeHash(bytes);
+                var hash = md5.ComputeHash(bytes);
                 var hash64 = Convert.ToBase64String(hash);
 
                 return includeTag

@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 
 namespace Haxxor.Framework.Core
 {
-    public class SHA512EncryptionModule : EncryptionModule
+    public class RIPEMD160EncryptionModule : EncryptionModule
     {
 
         /// <summary>
@@ -18,7 +18,7 @@ namespace Haxxor.Framework.Core
         {
             get
             {
-                return EncryptionType.SHA512;
+                return EncryptionType.RIPEMD160;
             }
         }
 
@@ -41,9 +41,9 @@ namespace Haxxor.Framework.Core
 
             var bytes = CryptoHelper.GetBytes(value);
 
-            using (var sha = new SHA512Managed())
+            using (var rip = RIPEMD160Managed.Create())
             {
-                var hash = sha.ComputeHash(bytes);
+                var hash = rip.ComputeHash(bytes);
                 var hash64 = Convert.ToBase64String(hash);
 
                 return includeTag
